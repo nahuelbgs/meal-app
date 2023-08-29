@@ -1,0 +1,15 @@
+.recipeDetail-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1020px;
+    margin: auto;
+}
+
+.recipeDetail-image-container{
+    width: 300px;
+    height: 400px;
+}
+
+.recipeDetail-image{
+    width: 100%;
+}
