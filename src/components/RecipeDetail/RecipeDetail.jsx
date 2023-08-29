@@ -41,20 +41,31 @@ function RecipeDetail({ id }) {
   console.log(combinedList);
 
   return (
-    <div className="recipeDetail-container">
-      <div className="recipeDetail-image-container">
-        <img className="recipeDetail-image" src={meal.strMealThumb} />
+    <section className="recipeDetail-section">
+      <img className="recipeDetail-image" src={meal.strMealThumb} />
+      <h1 className="recipeDetail-title">{meal.strMeal}</h1>
+      <div className="recipeDetail-container">
+        <div className="recipeDetail-ingredients">
+          <h2>Ingredients</h2>
+          {combinedList.map((ingredient) => (
+            <ul key={ingredient}>
+              <li>{ingredient}</li>
+            </ul>
+          ))}
+        </div>
+        <div className="recipeDetail-instructions">
+          <h2>Instructions</h2>
+          <p>{meal.strInstructions}</p>
+        </div>
+        <p className="recipeDetail-video">
+          For more information about the preparation, you can watch this{" "}
+          <a href={meal.strYoutube} target="_blank">
+            video
+          </a>
+          .
+        </p>
       </div>
-      <h1>{meal.strMeal}</h1>
-      <div>
-        <h2>Ingredients</h2>
-        {combinedList.map((ingredient) => (
-          <div key={ingredient}>
-            <p>{ingredient}</p>
-          </div>
-        ))}
-      </div>
-    </div>
+    </section>
   );
 }
 
