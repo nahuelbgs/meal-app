@@ -1,0 +1,15 @@
+.mealList-section{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    max-width: 1020px;
+    margin: auto;
+}
+
+.mealList-container {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+

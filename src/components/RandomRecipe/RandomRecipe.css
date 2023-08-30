@@ -5,53 +5,6 @@
   align-items: center;
 }
 
-.randomMeal-image {
-  width: 50%;
-  border-radius: 100%;
-}
-
-.randomMeal-title {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  width: 90%;
-  font-size: 20px;
-  height: 22%;
-  overflow: hidden;
-  text-align: center;
-}
-
-.randomMeal-ingredients {
-  line-height: 0;
-}
-
-.randomMeal-ingredients-list {
-  width: 90%;
-  text-align: center;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 25px;
-  background-color: #fff;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  width: 220px;
-  height: 300px;
-}
-
-.randomMeal-seeReceipe {
-  color: #fa4a0c;
-  cursor: pointer;
-}
-
-.randomMeal-seeReceipe:hover {
-  color: #fa4a0c;
-  text-decoration: underline;
-}
-
 .searchBarContainer {
   position: relative;
   display: flex;

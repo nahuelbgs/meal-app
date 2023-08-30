@@ -1,0 +1,50 @@
+.mealCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1.5px solid #F2F2F2;
+  width: 220px;
+  height: 280px;
+}
+
+.mealCard-image-container {
+  height: 50%;
+  overflow: hidden;
+}
+
+.mealCard-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.mealCard-title-container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 35%;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.mealCard-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.mealCard-seeRecipe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+}
+
+.mealCard-seeRecipe {
+  color: #fa4a0c;
+  cursor: pointer;
+}
+
+.mealCard-seeRecipe:hover {
+  color: #fa4a0c;
+  text-decoration: underline;
+}

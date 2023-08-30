@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "./RecipeDetail.css";
+import { useParams } from "react-router-dom";
 
-function RecipeDetail({ id }) {
+function RecipeDetail() {
+  const {idMeal} = useParams()
   const [meal, setMeal] = useState({});
+  console.log(idMeal)
   useEffect(() => {
-    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
+    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`)
       .then((response) => response.json())
       .then((data) => setMeal(data.meals[0]))
       .catch((error) => console.log(error));
-  }, [id]);
+  }, [idMeal]);
   console.log(meal);
 
   const measure = [];
